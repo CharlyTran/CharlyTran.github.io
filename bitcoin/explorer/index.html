@@ -10,22 +10,9 @@
 		<p><a href="https://charlytran.github.io/bitcoin/index.html">- Bitcoin</a></p>
 
 		<!-- barre de recherche-->
-		<form class="form-horizontal">
-		<fieldset>
-		<!-- Form Name -->
-		<legend>Barre de Recherche</legend>
-		<!-- Appended Input-->
-		<div class="form-group">
-		  <label class="col-md-4 control-label" for="appendedtext">Entrer adresse</label>
-		  <div class="col-md-4">
-		    <div class="input-group">
-		      <input id="appendedtext" name="appendedtext" class="form-control" placeholder="entrer adresse" type="text">
-		      <span class="input-group-addon">comfirmer</span>
-		    </div>
-		    
-		  </div>
-		</div>
-		</fieldset>
+		<form action="javascript:research('researchInput');">
+			<input type="text" class="form-control" id="researchInput" placeHolder="enter adress"
+				<button type="submit" class="btn btn-default" id="formBtn">Submit</button>
 		</form>
 
 	</body>
