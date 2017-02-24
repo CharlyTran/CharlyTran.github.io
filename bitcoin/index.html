@@ -5,22 +5,36 @@
 		<title>Bitcoin</title>
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-   	 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
    	 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-   	 	<script src="../js/custom.js"></script>
+
 </head>
 
 <body>
 
-	<div class="row">
-	<div class="col-lg-12 col-xs-6">
-    	<pre>
-        	<code id="demo" class="json kljs"></code>  <!--exemple de code html pour afficher la réponse reçue du webService dans a page html-->
-    	</pre>
-	</div>
-</div>
+	<h3>WS /info</h3>
+    <pre>
+       	<code id="info" class="json kljs"></code>  <!--exemple de code html pour afficher la réponse reçue du webService dans a page html-->
+    </pre>
 
-	
+    <h3>WS /blockchaininfo</h3>
+    <pre>
+       	<code id="blockchaininfo" class="json kljs"></code>  <!--exemple de code html pour afficher la réponse reçue du webService dans a page html-->
+    </pre>
 
+    <h3>WS /peerinfo</h3>
+    <pre>
+       	<code id="peerdemo" class="json kljs"></code>  <!--exemple de code html pour afficher la réponse reçue du webService dans a page html-->
+    </pre>
+
+    <h3>WS /mininginfo</h3>
+    <pre>
+       	<code id="miningdemo" class="json kljs"></code>  <!--exemple de code html pour afficher la réponse reçue du webService dans a page html-->
+    </pre>
+
+
+   	 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>	
+       	 	<script src="../js/custom.js"></script>
+       	 	<script type="text/javascript">homePageLoading();</script>
 </body>
 </html>

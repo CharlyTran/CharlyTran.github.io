@@ -19,18 +19,18 @@ function homePageLoading() {
     fonctionRequeteApi(url, elementID);
 
     url1 = 'http://bitcoin.mubiz.com/info';
-    elementID = 'demo1';
+    elementID = 'info';
     fonctionRequeteApi(url1, elementID);
 
     url2 = 'http://bitcoin.mubiz.com/blockchaininfo';
-    elementID = 'demo2';
+    elementID = 'blockchaininfo';
     fonctionRequeteApi(url2, elementID);
 
     url3 = 'http://bitcoin.mubiz.com/peerinfo';
-    elementID = 'demo2';
+    elementID = 'peerinfo';
     fonctionRequeteApi(url3, elementID);
 
     url4 = 'http://bitcoin.mubiz.com/mininginfo';
-    elementID = 'demo2';
+    elementID = 'mininginfo';
     fonctionRequeteApi(url4, elementID);
 }
