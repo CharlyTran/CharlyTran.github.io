@@ -1,5 +1,8 @@
 var xmlhttp = new XMLHttpRequest();
 var xmlhttp1 = new XMLHttpRequest();
+var xmlhttp2 = new XMLHttpRequest();
+var xmlhttp3 = new XMLHttpRequest();
+var xmlhttp4 = new XMLHttpRequest();
 
 xmlhttp.onreadystatechange = function() {
 if (this.readyState == 4 && this.status == 200) {
