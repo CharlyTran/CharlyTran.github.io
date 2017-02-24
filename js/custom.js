@@ -1,27 +1,36 @@
-var xmlhttp = new XMLHttpRequest();
-var xmlhttp1 = new XMLHttpRequest();
-var xmlhttp2 = new XMLHttpRequest();
-var xmlhttp3 = new XMLHttpRequest();
-var xmlhttp4 = new XMLHttpRequest();
-
-xmlhttp.onreadystatechange = function() {
-if (this.readyState == 4 && this.status == 200) {
-var myObj = this.responseText;
-var jsonPretty = JSON.stringify(JSON.parse(myObj),null,2);
-document.getElementById("demo").innerHTML = jsonPretty;
+function fonctionRequeteApi(url,elementTD)
+{
+	var xmlhttp = new XMLHttpRequest();
+	xmlhttp.onreadystatechange = function() 
+	{
+		if (this.readyState == 4 && this.status == 200) {
+			var myObj = this.responseText;
+			var jsonPretty = JSON.stringify(JSON.parse(myObj),null,2);
+			document.getElementById("demo").innerHTML = jsonPretty;
+			}
+	};
+	xmlhttp.open("GET", url, true);
+	xmlhttp.send();
 }
-};
-xmlhttp.open("GET", "https://api.blockcypher.com/v1/btc/main", true);
-xmlhttp.send();
 
-xmlhttp1.open("GET", "http://bitcoin.mubiz.com/info", true);
-xmlhttp1.send();
+function homePageLoading() {
+    url = 'https://api.blockcypher.com/v1/btc/main';
+    elementID = 'demo';
+    fonctionRequeteApi(url, elementID);
 
-xmlhttp2.open("GET", "http://bitcoin.mubiz.com/blockchaininfo", true);
-xmlhttp2.send();
+    url1 = 'http://bitcoin.mubiz.com/info';
+    elementID = 'demo1';
+    fonctionRequeteApi(url1, elementID);
 
-xmlhttp3.open("GET", "http://bitcoin.mubiz.com/peerinfo", true);
-xmlhttp3.send();
+    url2 = 'http://bitcoin.mubiz.com/blockchaininfo';
+    elementID = 'demo2';
+    fonctionRequeteApi(url2, elementID);
 
-xmlhttp4.open("GET", "http://bitcoin.mubiz.com/mininginfo", true);
-xmlhttp4.send();
+    url3 = 'http://bitcoin.mubiz.com/peerinfo';
+    elementID = 'demo2';
+    fonctionRequeteApi(url3, elementID);
+
+    url4 = 'http://bitcoin.mubiz.com/mininginfo';
+    elementID = 'demo2';
+    fonctionRequeteApi(url4, elementID);
+}
