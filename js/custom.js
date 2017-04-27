@@ -34,3 +34,5 @@ function homePageLoading() {
     elementID = 'mininginfo';
     fonctionRequeteApi(url4, elementID);
 }
+
+var research = new XMLHttpRequest()
